@@ -5222,6 +5222,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 169250521}
     m_Modifications:
+    - target: {fileID: 1191033986827350892, guid: f28474d8ec34b8f4495fdb54fbb715a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191033987511347211, guid: f28474d8ec34b8f4495fdb54fbb715a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.35
+      objectReference: {fileID: 0}
     - target: {fileID: 1191033987667891467, guid: f28474d8ec34b8f4495fdb54fbb715a4, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5266,9 +5274,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1191033987667891468, guid: f28474d8ec34b8f4495fdb54fbb715a4, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191033987667891468, guid: f28474d8ec34b8f4495fdb54fbb715a4, type: 3}
+      propertyPath: m_GravityScale
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1191033987667891471, guid: f28474d8ec34b8f4495fdb54fbb715a4, type: 3}
       propertyPath: m_Name
       value: Frog
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191033987667891478, guid: f28474d8ec34b8f4495fdb54fbb715a4, type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191033987667891478, guid: f28474d8ec34b8f4495fdb54fbb715a4, type: 3}
+      propertyPath: jumpForce
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191033987667891478, guid: f28474d8ec34b8f4495fdb54fbb715a4, type: 3}
+      propertyPath: ground.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f28474d8ec34b8f4495fdb54fbb715a4, type: 3}
@@ -5318,7 +5346,11 @@ MonoBehaviour:
   rb: {fileID: 0}
   leftPoint: {fileID: 4193515925595542297}
   rightPoint: {fileID: 4193515925180631166}
+  ground:
+    serializedVersion: 2
+    m_Bits: 0
   speed: 6
+  jumpForce: 0
 --- !u!50 &4193515925360522617
 Rigidbody2D:
   serializedVersion: 4
@@ -5563,11 +5595,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7414076361981098631, guid: 94be3b334decd5241af925d8a88da45f, type: 3}
       propertyPath: m_Size.x
-      value: 0.8
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 7414076361981098631, guid: 94be3b334decd5241af925d8a88da45f, type: 3}
       propertyPath: m_Size.y
-      value: 0.8
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 7414076361981098631, guid: 94be3b334decd5241af925d8a88da45f, type: 3}
       propertyPath: m_Material
@@ -5587,7 +5619,7 @@ PrefabInstance:
       objectReference: {fileID: 1657614493}
     - target: {fileID: 7414076361981098633, guid: 94be3b334decd5241af925d8a88da45f, type: 3}
       propertyPath: m_Size.x
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 7414076361981098633, guid: 94be3b334decd5241af925d8a88da45f, type: 3}
       propertyPath: m_Size.y

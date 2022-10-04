@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         if (!isHurt)
         {
             Movement();
-            if(rb.velocity.y != 0)Debug.Log(rb.velocity.y.ToString());
+            //if(rb.velocity.y != 0)Debug.Log(rb.velocity.y.ToString());
         }
         SwitchAnim();
 
