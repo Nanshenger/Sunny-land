@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    // 移动
     void Movement()
     {
         float horizontalMove = Input.GetAxis("Horizontal");
@@ -120,9 +121,10 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if(anim.GetBool("Falling"))
             {
-                Destroy(collision.gameObject);
+                enemy.JumpOn();
                 jumpNum++;
                 rb.velocity = new Vector2(rb.velocity.x, jumpforce);
                 anim.SetBool("Jumping", true);

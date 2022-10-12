@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Frog : MonoBehaviour
+public class Enemy_Frog : Enemy
 {
     public Rigidbody2D rb;
     public Transform leftPoint, rightPoint;
-    private Animator anim;
+    //private Animator anim;
     private Collider2D coll;
     public LayerMask ground;
     private float leftX, rightX;
@@ -15,10 +15,11 @@ public class Enemy_Frog : MonoBehaviour
     
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
 
         transform.DetachChildren();
@@ -34,6 +35,7 @@ public class Enemy_Frog : MonoBehaviour
         SwitchAnim();
     }
 
+    // 移动
     void Movement()
     {
         if(faceLeft) // 面向左侧
@@ -66,6 +68,7 @@ public class Enemy_Frog : MonoBehaviour
         }
     }
 
+    // 青蛙动画切换
     void SwitchAnim()
     {
         if(anim.GetBool("Jumping"))
@@ -82,5 +85,7 @@ public class Enemy_Frog : MonoBehaviour
             anim.SetBool("Falling", false);
         }
     }
+
+
 
 }
