@@ -6,7 +6,6 @@ public class Enemy_Frog : Enemy
 {
     public Rigidbody2D rb;
     public Transform leftPoint, rightPoint;
-    //private Animator anim;
     private Collider2D coll;
     public LayerMask ground;
     private float leftX, rightX;
@@ -19,7 +18,6 @@ public class Enemy_Frog : Enemy
     {
         base.Start();
         rb = GetComponent<Rigidbody2D>();
-        //anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
 
         transform.DetachChildren();

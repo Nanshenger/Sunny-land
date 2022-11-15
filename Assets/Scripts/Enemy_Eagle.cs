@@ -6,7 +6,6 @@ public class Enemy_Eagle : Enemy
 {
     public Rigidbody2D rb;
     public Transform topPoint, bottomPoint;
-    private Animator anim;
     //private Collider2D coll;
     private float TopY, BottomY;
     private bool isUp = true;
@@ -18,7 +17,6 @@ public class Enemy_Eagle : Enemy
     {
         base.Start();
         rb = GetComponent<Rigidbody2D>();
-        //coll = GetComponent<Collider2D>();
         TopY = topPoint.position.y;
         BottomY = bottomPoint.position.y;
         Destroy(topPoint.gameObject);
