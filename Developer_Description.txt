@@ -1,0 +1,7 @@
+Developer: Nanshenger
+Description: This work is for learning about Unity, only for example project.
+Contact: QQ2584036741
+
+开发者：南笙
+备注：该作品为了学习并熟悉Unity而制作，仅为示例项目。
+联系方式：QQ2584036741
